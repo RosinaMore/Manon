@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Manon</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand"><img src="./img/Logo.png" alt="logo de Manon"/></a>
+        <a class="navbar-brand" href="#"
+          ><img src="./img/Logo.png" alt="logo de Manon"/>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -27,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sobre nosotras</a>
@@ -39,8 +41,7 @@
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Colecciones
+                aria-expanded="false">Colecciones
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">camisas</a></li>
@@ -68,42 +69,24 @@
           </form>
         </div>
       </div>
-    </nav>
-    <main>
-      <img src="./img/sweater_colores.jpeg" alt="main">
-    </main>
-    <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="./img/blusa_zebra.jpeg" class="card-img-top w-50 m-auto" alt="blusa zebra">
-                <div class="card-body">
-                  <h5 class="card-title">Blusa Zebra</h5>
-                  <a href="#" class="btn btn-primary">La quiero</a>
-                </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="./img/polera_vintage_verde.jpeg" class="card-img-top w-50 m-auto" alt="polera vintage verde">
-                <div class="card-body">
-                  <h5 class="card-title">Polera vintage</h5>
-                  <a href="#" class="btn btn-primary">La quiero</a>
-                </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="./img/sweater_cuadros.jpeg" class="card-img-top w-50 m-auto" alt="sweater cuadros">
-                <div class="card-body">
-                  <h5 class="card-title">Sweater cuadros</h5>
-                  <a href="#" class="btn btn-primary">La quiero</a>
-                </div>
-            </div>
-          </div>
+    </nav>  
+      <form class="contacto">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
-      </div>
-    <script
+        <div class="mb-4">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous">

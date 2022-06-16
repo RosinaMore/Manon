@@ -1,3 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-image: url("Este equipo/Escritorio/Repositorio/Boostrap/Manon/sweater colores.jpeg");
+}
+
 .navbar-brand img{
     width: 50%;
+}
+
+main img{
+width: 100%;
+}
+
+.container{
+    background-color: #7d1b1b;
+    opacity: 70%;
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+    
+}
+
+/* --------------------CONTACTO------------------------------ */
+
+.contacto{
+    background-color: blanchedalmond;
+    opacity: 80%;
+    width: 50%;
+    height: 60vh;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+/* --------------------MEDIA QUERIES------------------------- */
+@media (max-width: 1140px);{
+    main img{
+        width: 0 auto;
+    }
+}
+
+@media (min-width: 540px);{
+    main img{
+        height: 80vh;
+    }
 }
