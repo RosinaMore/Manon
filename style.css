@@ -1,30 +1,40 @@
 * {
-    margin: 0;
-    padding: 0;
-    background-image: url("Este equipo/Escritorio/Repositorio/Boostrap/Manon/sweater colores.jpeg");
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
 }
 
 .navbar-brand img{
     width: 50%;
 }
 
-main img{
-width: 100%;
+/* ------------------MAIN-------------------------------- */
+
+.ClaseDeMain{
+    background-image: url('./img/polera_colores.jpeg');
+    background-repeat: repeat;
+    background-size: cover;
+    margin: -13%;   
+}
+
+.ClaseDeMain h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    color: #7d1b1b;
+    margin-top: 10%;
+    margin-left: 80%;   
+}
+
+.animate__animated {
+    animation-iteration-count: infinite;
 }
 
 .container{
     background-color: #7d1b1b;
-    opacity: 70%;
+    border-radius: 5px;
     width: 100%;
-    height: 50vh;
-    margin: 0 auto;
-}
-
-.row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap
-    
+    height: 80vh;
+    margin-top: -35%;
+    padding: 2em;
 }
 
 /* --------------------CONTACTO------------------------------ */
@@ -39,10 +49,34 @@ width: 100%;
     padding: 2em;
     border-radius: 5px;
 }
+/* --------------------FOOTER-------------------------------- */
 
+.footer {
+    background-color: rgb(240, 238, 236);
+    padding: 1em;
+    width: 100%;
+  }
+  
+  .footer ol {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 0.8rem;
+  }
+  
+  .footer i {
+    color: rgb(41, 19, 127);
+    width: 80%;
+  }
+  
 /* --------------------MEDIA QUERIES------------------------- */
 @media (max-width: 1140px);{
     main img{
+        width: 0 auto;
+    }
+    .container{
         width: 0 auto;
     }
 }
@@ -51,4 +85,12 @@ width: 100%;
     main img{
         height: 80vh;
     }
+    .container{
+        flex-direction: column;
+        height: 80vh;
+    }
+    .ClaseDeMain h2{
+        text-align: left;
+    }
+
 }
